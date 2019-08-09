@@ -1,6 +1,9 @@
 # docker-k8s-kotlin-app
 This was a learning experiment to create a simple Spring Boot 2 Kotlin app and use docker and k8s to deploy it.
 
+## What you need
+You will need Docker, minikube and kubectl installed.
+
 ## How to use
 Run `mvn install` to build the project.
 Start your minikube using `minikube start`. Because we use Minikube instead of pushing the Docker image to a registry, we can build the image using the same Docker host as the Minikube VM, so that the images are automatically present. To do this we need to make sure we are using the Minikube Docker daemon. Do this by running the following magic:
